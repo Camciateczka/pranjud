@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kliknij 😏</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:black;color:white;font-family:Arial;">
+
+<div style="text-align:center;">
+<h1>Kliknij tutaj</h1>
+<button onclick="playSound()" style="font-size:25px;padding:15px 30px;border-radius:10px;">Kliknij</button>
+</div>
+
+<audio id="sound" src="dzwiek.mp3"></audio>
+
+<script>
+function playSound() {
+  document.getElementById("sound").play();
+}
+</script>
+
+</body>
