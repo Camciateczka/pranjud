@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kliknij Karo 😏</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:black;color:white;font-family:Arial;">
+
+<div style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+    <h1>Kliknij Karo</h1>
+  
+    <img src="obrazek.jpg" alt="Karo" width="300" style="border-radius:20px;margin-bottom:20px;">
+
+    <button 
+        onclick="playSound()" 
+        style="font-size:150px; padding:170px 150px; border-radius:90px; background-color:deeppink; color:white; border:none; cursor:pointer;">
+        Kliknij
+    </button>
+</div>
+
+<audio id="sound" src="dzwiek.mp3"></audio>
+
+<script>
+function playSound() {
+  document.getElementById("sound").play();
+}
+</script>
+
+</body>
+</html>
